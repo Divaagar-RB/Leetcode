@@ -9,18 +9,30 @@
 class Solution {
 public:
     ListNode *detectCycle(ListNode *head) {
-        unordered_set<ListNode*> set;
-        
-        while(head!=NULL){
-            if(set.find(head)!=set.end()){
-                return head;
+        if (head == NULL || head->next == NULL) return NULL;
+
+        ListNode* slow = head;
+        ListNode* fast = head;
+
+        // Detect if a cycle exists
+        while (fast != NULL && fast->next != NULL) {
+            slow = slow->next;
+            fast = fast->next->next;
+
+            // Cycle detected
+            if (slow == fast) {
+                slow = head;
+
+                // Find the entry point of the cycle
+                while (slow != fast) {
+                    slow = slow->next;
+                    fast = fast->next;
+                }
+                return slow;
             }
-            set.insert(head);
-            head=head->next;
-            
         }
-       
+
+        // No cycle
         return NULL;
-        
     }
 };
