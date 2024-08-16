@@ -1,35 +1,55 @@
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode() : val(0), next(nullptr) {}
+ *     ListNode(int x) : val(x), next(nullptr) {}
+ *     ListNode(int x, ListNode *next) : val(x), next(next) {}
+ * };
+ */
 class Solution {
 public:
     bool isPalindrome(ListNode* head) {
-        ListNode* fastptr = head;
-        ListNode* slowptr = head;
-        stack<int> stk;
-        if(head->next==NULL){
-            return true;
+        
+        if(head->next==NULL) return true;
+        ListNode * slow=head;
+        ListNode * fast=head ;
+        ListNode * prev=NULL;
+        ListNode * prevNode=NULL;
+        while(fast!=NULL && fast->next!=NULL){
+            fast = fast ->next->next;
+            prev= slow;
+            slow = slow->next;
+            
+        }
+       ListNode * temp = slow;
+       ListNode * front;
+    
+        while(temp!=NULL){
+                front=temp->next;
+                temp->next=prevNode;
+                prevNode=temp;
+                temp=front;
+
+
         }
         
-        // Push the first half of the list onto the stack
-        while (fastptr != nullptr && fastptr->next != nullptr) {
-            stk.push(slowptr->val);
-            slowptr = slowptr->next;
-            fastptr = fastptr->next->next;
-        }
-          if (fastptr != nullptr) {
-            slowptr = slowptr->next;
-        }
         
-        
-       
-        
-        // Compare the second half of the list with the stack
-        while (slowptr != nullptr) {
-            if (slowptr->val != stk.top()) {
+        temp=head;
+        while(prevNode!=NULL){
+            
+            if(prevNode->val!=temp->val){
                 return false;
             }
-            stk.pop();
-            slowptr = slowptr->next;
+            
+            prevNode=prevNode->next;
+            
+            
+            temp=temp->next;
         }
         
-        return true;
+        
+      return true;  
     }
 };
