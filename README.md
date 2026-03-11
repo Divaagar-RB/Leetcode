@@ -11,6 +11,7 @@
 | [0043-multiply-strings](https://github.com/Divaagar-RB/Leetcode/tree/main/0043-multiply-strings/) | Medium |
 | [1328-break-a-palindrome](https://github.com/Divaagar-RB/Leetcode/tree/main/1328-break-a-palindrome/) | Medium |
 | [3760-maximum-substrings-with-distinct-start](https://github.com/Divaagar-RB/Leetcode/tree/main/3760-maximum-substrings-with-distinct-start/) | Medium |
+| [3849-maximum-bitwise-xor-after-rearrangement](https://github.com/Divaagar-RB/Leetcode/tree/main/3849-maximum-bitwise-xor-after-rearrangement/) | Medium |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -32,4 +33,9 @@
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [1328-break-a-palindrome](https://github.com/Divaagar-RB/Leetcode/tree/main/1328-break-a-palindrome/) | Medium |
+| [3849-maximum-bitwise-xor-after-rearrangement](https://github.com/Divaagar-RB/Leetcode/tree/main/3849-maximum-bitwise-xor-after-rearrangement/) | Medium |
+## Bit Manipulation
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [3849-maximum-bitwise-xor-after-rearrangement](https://github.com/Divaagar-RB/Leetcode/tree/main/3849-maximum-bitwise-xor-after-rearrangement/) | Medium |
 <!---LeetCode Topics End-->
