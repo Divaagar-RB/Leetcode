@@ -24,10 +24,12 @@
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0031-next-permutation](https://github.com/Divaagar-RB/Leetcode/tree/main/0031-next-permutation/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Divaagar-RB/Leetcode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 ## Two Pointers
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0031-next-permutation](https://github.com/Divaagar-RB/Leetcode/tree/main/0031-next-permutation/) | Medium |
 | [2161-partition-array-according-to-given-pivot](https://github.com/Divaagar-RB/Leetcode/tree/main/2161-partition-array-according-to-given-pivot/) | Medium |
 ## Greedy
 | Problem Name | Difficulty |
