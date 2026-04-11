@@ -5,15 +5,12 @@ public:
         for(int i=0;i<nums.size();i++){
             if(i>j) break;
             if(nums[i]==val){
-                while(j>i && nums[j]==val) j--;
-              if(i<j) { swap(nums[j],nums[i]);
-                j--;}
-                else {
-                    j--;  
-                }
+                while(nums[j]==val) j--;
+                swap(nums[j],nums[i]);
+                j--;
             }
           
         }
-       return j+1;   
+       return j;   
     }
 };
